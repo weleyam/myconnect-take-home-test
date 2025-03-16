@@ -59,11 +59,45 @@ npx playwright show-report
 
 ### [TASK 2]: API Automation Testing
 
-> _Details to be added_
+This project uses **Playwright** to automate API testing for authentication endpoints. The test suite covers both **positive** and **negative** scenarios for user login and token validation.
+
+#### **Test Scenarios**
+
+#### ✅ **Positive Tests:**
+- `Login with valid credentials` - Ensures a valid user can log in and receives correct response properties.
+- `Validate JWT access token` - Confirms that the returned `accessToken` follows JWT format.
+
+#### ❌ **Negative Tests:**
+- `Login with incorrect username` - Checks that an invalid username returns a `400` error.
+- `Login with incorrect password` - Ensures incorrect passwords return a `400` error.
+- `Login with empty username and password` - Tests response when both fields are empty.
+- `Login with missing username field` - Ensures missing `username` returns an error.
+- `Login with missing password field` - Ensures missing `password` returns an error.
+
+#### **Running the API Tests**
+
+#### **1. Execute all API tests:**
+```sh
+npx playwright test -g "@api"
+```
+
+#### **2. Run only positive API tests:**
+```sh
+npx playwright test -g "@positive"
+```
+
+#### **3. Run only negative API tests:**
+```sh
+npx playwright test -g "@negative"
+```
+
+#### **4. View test results in Playwright UI:**
+```sh
+npx playwright show-report
+```
 
 ---
 
 ### [TASK 3]: Load and Performance Testing
 
 > _Details to be added_
-
