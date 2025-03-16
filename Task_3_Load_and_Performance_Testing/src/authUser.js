@@ -40,5 +40,4 @@ export default function () {
     'has accessToken': (r) => JSON.parse(r.body).hasOwnProperty('accessToken'),
   });
 
-  // sleep(1);
 }
