@@ -1,0 +1,18 @@
+{
+  "name": "load-performance-k6",
+  "version": "1.0.0",
+  "description": "load and performance testing using k6 by weleyam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "weleyam",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "k6": "^0.0.0"
+  },
+  "devDependencies": {
+    "@types/k6": "^0.57.1"
+  }
+}
